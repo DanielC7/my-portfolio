@@ -42,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto">
+          <div class="navbar-nav mx-auto" style="padding-left: 8%">
             <a class="nav-link mx-4" href="index.html">Home</a>
             <a class="nav-link mx-4" href="about.html">About Me</a>
             <a class="nav-link mx-4" href="#projects">My Projects</a>
@@ -89,21 +89,28 @@
       </div>
     </header>
     <main class="container mt-5">
-      <div id="aboutMe" class="section-title my-5 text-center">
+      <div id="aboutMe" class="section-title pt-1 my-5 text-center">
         <h2>About Me</h2>
         <div class="bottom-line"></div>
-        <p>
-          My name is Daniel, I studied Computer Science and graduated from MTA.
-          <br />
-          I love learning and always try to better myself.<br />
-          <br />
-          Since graduating i've learned Full Stack Web Development,<br />
-          took some online courses and built a few projects among other things.
-          <br />
-          I'm a hard worker, and I know I can do great things.
-        </p>
+        <div class="py-5 bg-light">
+          <p>
+            My name is Daniel, I studied Computer Science and graduated from
+            MTA.
+            <br />
+            I love learning and always try to better myself.<br />
+            <br />
+            Since graduating i've learned Full Stack Web Development,<br />
+            took some online courses and built a few projects among other
+            things.
+            <br />
+            I'm a hard worker, and I know I can do great things.
+          </p>
+        </div>
       </div>
-      <div id="projects" class="section-title mb-4 text-center">
+
+      <div style="width: 75%" class="mx-auto"><hr /></div>
+
+      <div id="projects" class="section-title pt-5 mb-4 text-center">
         <h2>My Projects</h2>
         <div class="bottom-line"></div>
       </div>
@@ -189,7 +196,10 @@
           class="d-flex flex-row justify-content-between align-items-center py-4"
         >
           <div>
-            <div>Copyright &copy; 2022</div>
+            <div>
+              Copyright &copy; 2022
+              <!-- <span style="color: red"><strong>Daniel Cohen</strong></span> -->
+            </div>
           </div>
           <div class="d-flex">
             <div class="mx-2">
