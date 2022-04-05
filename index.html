@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto" style="padding-left: 8%">
             <a class="nav-link mx-4" href="index.html">Home</a>
-            <a class="nav-link mx-4" href="about.html">About Me</a>
+            <a class="nav-link mx-4" href="#me-stuff">About Me</a>
             <a class="nav-link mx-4" href="#projects">My Projects</a>
             <a class="nav-link mx-4" href="#contact-me">Contact</a>
           </div>
@@ -88,26 +88,54 @@
         <!-- </div> -->
       </div>
     </header>
-    <main class="container mt-5">
-      <div id="aboutMe" class="section-title pt-1 my-5 text-center">
-        <h2>About Me</h2>
-        <div class="bottom-line"></div>
-        <div class="py-5 bg-light">
-          <p>
-            My name is Daniel, I studied Computer Science and graduated from
-            MTA.
-            <br />
-            I love learning and always try to better myself.<br />
-            <br />
-            Since graduating i've learned Full Stack Web Development,<br />
-            took some online courses and built a few projects among other
-            things.
-            <br />
-            I'm a hard worker, and I know I can do great things.
-          </p>
+
+    <div id="me-stuff" class="d-flex flex-direction: column">
+      <div id="aboutMe" class="section-title text-start">
+        <div
+          class="py-5 px-5 bg-light h-100"
+          style="
+            background-image: url('img/daniel-background.jpg');
+            background-size: cover;
+          "
+        >
+          <div class="inner-about">
+            <h2>About Me</h2>
+            <div class="bottom-line ms-5 mb-3" style="margin: 0"></div>
+            <p style="font-size: larger">
+              My name is Daniel, <br />
+              I studied Computer Science and graduated from MTA.
+              <br />
+              I love learning and always try to better myself.<br />
+              <br />
+              Since graduating i've learned Full Stack Web Development,<br />
+              took online courses and built a few projects among other things.
+              <br />
+              I'm a hard worker, and can be an asset to your team.
+            </p>
+          </div>
         </div>
       </div>
+      <div id="mySkills" class="section-title text-start">
+        <div class="py-5 px-5 bg-dark h-100">
+          <div class="inner-about">
+            <h2>My Skills</h2>
+            <div class="bottom-line ms-5 mb-3" style="margin: 0"></div>
+            <p>Java</p>
+            <div class="progress-bar w-100"></div>
+            <p>JavaScript</p>
+            <div class="progress-bar w-100"></div>
+            <p>Html</p>
+            <div class="progress-bar w-75"></div>
+            <p>CSS</p>
+            <div class="progress-bar w-75"></div>
+            <p>Python</p>
+            <div class="progress-bar w-50"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <main class="container mt-5">
       <div style="width: 75%" class="mx-auto"><hr /></div>
 
       <div id="projects" class="section-title pt-5 mb-4 text-center">
@@ -115,91 +143,88 @@
         <div class="bottom-line"></div>
       </div>
       <section class="card" data-aos="fade-right">
-        <img src="img/img1.png" alt="" />
+        <img src="img/img-camps.png" alt="" />
         <div>
-          <h3>Project #1</h3>
+          <h3>CampShare</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
+            "Find and share campsites from all over the globe!" <br /><br />
+            A full stack web app. <br />
+            Register, login, rate/comment, and add new campsites to the map.
+            <br />
+            Built with JS, NodeJS, ExpressJS, MongoDB. Used Cloudinary for
+            online storage and deployed on Heroku.
           </p>
-          <a href="#" class="btn">Repository</a>
+          <a href="https://github.com/DanielC7/camp-share" class="btn"
+            >Repository</a
+          >
         </div>
       </section>
       <section class="card" data-aos="fade-left">
-        <img src="img/img2.png" alt="" />
+        <img src="img/img-wam.png" alt="" />
         <div>
-          <h3>Project #2</h3>
+          <h3>Whack-A-Mole</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
+            "Whack that mole!"<br />
+            <br />
+            A fun and simple VR game I've developed as a final project for a
+            Virtual and Augmented Reality course. <br />
+            Developed with Unity and coded in C#.
           </p>
-          <a href="#" class="btn">Repository</a>
+          <a href="https://github.com/DanielC7/Whack-A-Mole" class="btn"
+            >Repository</a
+          >
         </div>
       </section>
       <section class="card" data-aos="fade-right">
-        <img src="img/img3.png" alt="" />
+        <img src="img/Tetris.gif" alt="" />
         <div>
-          <h3>Project #3</h3>
+          <h3>Tetris</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
+            Tetris game project developed for MTA Object Oriented course. <br />
+            Interactible UI using C++ and its object oriented features. <br />
+            Plays like regular old Tetris, but with a few additions such as
+            bombs and jokers.
           </p>
-          <a href="#" class="btn">Repository</a>
+          <a href="https://github.com/DanielC7/Tetris---V2" class="btn"
+            >Repository</a
+          >
         </div>
       </section>
       <section class="card" data-aos="fade-left">
-        <img src="img/img4.png" alt="" />
+        <img src="img/img-ms.png" alt="" />
         <div>
-          <h3>Project #4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
-          </p>
-          <a href="#" class="btn">Repository</a>
+          <h3>MineSweeper</h3>
+          <p>Simple MineSweeper game coded in JS, HTML, CSS</p>
+          <a href="https://github.com/DanielC7/MineSweeper-JS" class="btn"
+            >Repository</a
+          >
         </div>
       </section>
       <section class="card" data-aos="fade-right">
-        <img src="img/img5.png" alt="" />
+        <img src="img/img-port.png" alt="" />
         <div>
-          <h3>Project #5</h3>
+          <h3>Portfolio</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
+            A portfolio website introducing me, my skills and some projects I
+            have been working on.
           </p>
-          <a href="#" class="btn">Repository</a>
-        </div>
-      </section>
-      <section class="card" data-aos="fade-left">
-        <img src="img/img6.png" alt="" />
-        <div>
-          <h3>Project #6</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
-            quibusdam sequi placeat? Sint qui vel, asperiores laudantium officia
-            veritatis
-          </p>
-          <a href="#" class="btn">Repository</a>
+          <a href="https://github.com/DanielC7/my-portfolio" class="btn"
+            >Repository</a
+          >
         </div>
       </section>
     </main>
 
     <section id="contact-me" class="">
-      <div class="container">
+      <div class="mx-5 px-5">
         <!-- <h2>My Contact Information</h2> -->
 
         <div
           class="d-flex flex-row justify-content-between align-items-center py-4"
         >
           <div>
-            <div>
-              Copyright &copy; 2022
-              <!-- <span style="color: red"><strong>Daniel Cohen</strong></span> -->
-            </div>
+            Copyright &copy; 2022
+            <!-- <span style="color: red"><strong>Daniel Cohen</strong></span> -->
           </div>
           <div class="d-flex">
             <div class="mx-2">

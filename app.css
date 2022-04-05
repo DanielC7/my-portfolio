@@ -48,6 +48,15 @@ a {
   margin: 0 auto 1rem auto;
 }
 
+.progress-bar {
+  height: 4px;
+  width: 4rem;
+  background: rgb(248, 199, 37);
+  display: block;
+  margin-bottom: 2rem;
+  /* margin: 0 auto 1rem auto; */
+}
+
 .card {
   /* display: grid; */
   display: flex;
@@ -62,6 +71,7 @@ a {
 
 .card img {
   height: 400px;
+  width: 50%;
 }
 
 .card > div {
@@ -86,17 +96,67 @@ a {
   color: black;
 }
 
+#me-stuff {
+  height: 800px;
+}
+
 #contact-me {
   background-color: rgb(255, 187, 0);
   /* height: 200px; */
   font-family: "Montserrat", sans-serif;
 }
 
-footer {
+#aboutMe {
+  width: 50%;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+#mySkills {
+  width: 50%;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.inner-about {
+  margin: 5rem;
+}
+
+@media (max-width: 1000px) {
+  .inner-about {
+    margin: 1rem;
+  }
 }
 
 @media (max-width: 700px) {
   .card {
     display: block;
+  }
+  .card img {
+    height: 400px;
+    width: 100%;
+  }
+  #me-stuff {
+    flex-direction: column;
+    height: 1100px;
+  }
+
+  #aboutMe {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* display: block; */
+  }
+  #mySkills {
+    height: 50%;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    /* display: block; */
   }
 }
