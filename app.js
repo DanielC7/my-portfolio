@@ -1,24 +1,18 @@
-const select = (el, all = false) => {
-  el = el.trim();
-  if (all) {
-    return [...document.querySelectorAll(el)];
-  } else {
-    return document.querySelector(el);
-  }
-};
+const express = require("express");
+const app = express();
+const path = require("path");
 
-const typed = select(".typed");
-if (typed) {
-  let typed_strings = typed.getAttribute("data-typed-items");
-  typed_strings = typed_strings.split(",");
-  new Typed(".typed", {
-    strings: typed_strings,
-    loop: true,
-    typeSpeed: 80,
-    backSpeed: 50,
-    backDelay: 1500,
-  });
-}
+// app.set("view engine", "html");
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Serving on port ${port}`);
+});
 
 // Can also be included with a regular script tag
 // const options = {

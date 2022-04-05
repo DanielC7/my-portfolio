@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Cohen | Dev</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3dc74c1607.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Daniel Cohen</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto" style="padding-left: 8%">
+            <a class="nav-link mx-4" href="index.html">Home</a>
+            <a class="nav-link mx-4" href="#me-stuff">About Me</a>
+            <a class="nav-link mx-4" href="#projects">My Projects</a>
+            <a class="nav-link mx-4" href="#contact-me">Contact</a>
+          </div>
+          <div class="mx-4">
+            <a
+              href="https://www.linkedin.com/in/daniel-cohen-59596b196/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://github.com/danielc7" class="mx-2"
+              ><i class="fa-brands fa-github fa-xl"></i
+            ></a>
+            <a href="mailto:danielcohendev@gmail.com"
+              ><i class="fa-solid fa-envelope fa-xl"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="main-header d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="my-info">
+        <div class="info-title">
+          <span><strong>Daniel Cohen,</strong></span>
+        </div>
+        <!-- <span class="typed" data-typed-items="A Developer"></span> -->
+
+        <div class="info-subtitle">
+          <span
+            class="typed"
+            data-typed-items="Developer, Loving son, Caring boyfriend"
+          ></span>
+        </div>
+        <span>Searching for my next job as a developer</span>
+        <div class="mt-4">
+          <a href="Daniel Cohen CV.pdf" target="_blank" download>
+            <button class="btn resume-btn" type="button">My Resume</button>
+          </a>
+        </div>
+        <!-- </div> -->
+      </div>
+    </header>
+
+    <div id="me-stuff" class="d-flex flex-direction: column">
+      <div id="aboutMe" class="section-title text-start">
+        <div
+          class="py-5 px-5 bg-light h-100"
+          style="
+            background-image: url('img/daniel-background.jpg');
+            background-size: cover;
+          "
+        >
+          <div class="inner-about">
+            <h2>About Me</h2>
+            <div class="bottom-line ms-5 mb-3" style="margin: 0"></div>
+            <p style="font-size: larger">
+              My name is Daniel, <br />
+              I studied Computer Science and graduated from MTA.
+              <br />
+              I love learning and always try to better myself.<br />
+              <br />
+              Since graduating i've learned Full Stack Web Development,<br />
+              took online courses and built a few projects among other things.
+              <br />
+              I'm a hard worker, and can be an asset to your team.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="mySkills" class="section-title text-start">
+        <div class="py-5 px-5 bg-dark h-100">
+          <div class="inner-about">
+            <h2>My Skills</h2>
+            <div class="bottom-line ms-5 mb-3" style="margin: 0"></div>
+            <p>Java</p>
+            <div class="progress-bar w-100"></div>
+            <p>JavaScript</p>
+            <div class="progress-bar w-100"></div>
+            <p>Html</p>
+            <div class="progress-bar w-75"></div>
+            <p>CSS</p>
+            <div class="progress-bar w-75"></div>
+            <p>Python</p>
+            <div class="progress-bar w-50"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container mt-5">
+      <div style="width: 75%" class="mx-auto"><hr /></div>
+
+      <div id="projects" class="section-title pt-5 mb-4 text-center">
+        <h2>My Projects</h2>
+        <div class="bottom-line"></div>
+      </div>
+      <section class="card" data-aos="fade-right">
+        <img src="img/img-camps.png" alt="" />
+        <div>
+          <h3>CampShare</h3>
+          <p>
+            "Find and share campsites from all over the globe!" <br /><br />
+            A full stack web app. <br />
+            Register, login, rate/comment, and add new campsites to the map.
+            <br />
+            Built with JS, NodeJS, ExpressJS, MongoDB. Used Cloudinary for
+            online storage and deployed on Heroku.
+          </p>
+          <a href="https://github.com/DanielC7/camp-share" class="btn"
+            >Repository</a
+          >
+        </div>
+      </section>
+      <section class="card" data-aos="fade-left">
+        <img src="img/img-wam.png" alt="" />
+        <div>
+          <h3>Whack-A-Mole</h3>
+          <p>
+            "Whack that mole!"<br />
+            <br />
+            A fun and simple VR game I've developed as a final project for a
+            Virtual and Augmented Reality course. <br />
+            Developed with Unity and coded in C#.
+          </p>
+          <a href="https://github.com/DanielC7/Whack-A-Mole" class="btn"
+            >Repository</a
+          >
+        </div>
+      </section>
+      <section class="card" data-aos="fade-right">
+        <img src="img/Tetris.gif" alt="" />
+        <div>
+          <h3>Tetris</h3>
+          <p>
+            Tetris game project developed for MTA Object Oriented course. <br />
+            Interactible UI using C++ and its object oriented features. <br />
+            Plays like regular old Tetris, but with a few additions such as
+            bombs and jokers.
+          </p>
+          <a href="https://github.com/DanielC7/Tetris---V2" class="btn"
+            >Repository</a
+          >
+        </div>
+      </section>
+      <section class="card" data-aos="fade-left">
+        <img src="img/img-ms.png" alt="" />
+        <div>
+          <h3>MineSweeper</h3>
+          <p>Simple MineSweeper game coded in JS, HTML, CSS</p>
+          <a href="https://github.com/DanielC7/MineSweeper-JS" class="btn"
+            >Repository</a
+          >
+        </div>
+      </section>
+      <section class="card" data-aos="fade-right">
+        <img src="img/img-port.png" alt="" />
+        <div>
+          <h3>Portfolio</h3>
+          <p>
+            A portfolio website introducing me, my skills and some projects I
+            have been working on.
+          </p>
+          <a href="https://github.com/DanielC7/my-portfolio" class="btn"
+            >Repository</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <section id="contact-me" class="">
+      <div class="mx-5 px-5">
+        <!-- <h2>My Contact Information</h2> -->
+
+        <div
+          class="d-flex flex-row justify-content-between align-items-center py-4"
+        >
+          <div>
+            Copyright &copy; 2022
+            <!-- <span style="color: red"><strong>Daniel Cohen</strong></span> -->
+          </div>
+          <div class="d-flex">
+            <div class="mx-2">
+              <a
+                href="https://www.linkedin.com/in/daniel-cohen-59596b196/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-xl"></i>
+                <!-- <div>My Linkedin Account</div> -->
+              </a>
+            </div>
+            <div class="mx-2">
+              <a href="https://github.com/danielc7"
+                ><i class="fa-brands fa-github fa-xl"></i
+              ></a>
+            </div>
+            <div class="mx-2">
+              <a href="mailto:danielcohendev@gmail.com"
+                ><i class="fa-solid fa-envelope fa-xl"></i>
+                <!-- <div>danielcohendev@gmail.com</div> -->
+              </a>
+            </div>
+            <div class="mx-2">
+              <a href="tel:0547892367"
+                ><i class="fa-solid fa-phone fa-xl"></i>
+                <!-- <div>054-789-2367</div> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="ms-3 text-white-50">
+        <!-- <p>Copyright &copy; 2022</p> -->
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./app.js"></script>
+    <script src="typed.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script>
+      AOS.init({
+        // offset: 400,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
