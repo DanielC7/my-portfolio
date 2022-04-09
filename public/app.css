@@ -70,8 +70,8 @@ a {
 }
 
 .card img {
-  height: 300px;
-  width: 50%;
+  height: 320px;
+  width: 320px;
 }
 
 .card > div {
@@ -172,5 +172,11 @@ a {
     padding-right: 2rem;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  @media (max-width: 420px) {
+    .info-title {
+      font-size: 3rem;
+    }
   }
 }
