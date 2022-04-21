@@ -137,6 +137,17 @@ a {
   margin-right: 5rem;
 }
 
+#new-joke-btn {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;
+  background-color: rgb(125, 181, 249);
+  padding: 0.3rem;
+}
+
+#jokes {
+  font-family: 'Source Code Pro', monospace;
+}
+
 @media (max-width: 1000px) {
   .inner-about {
     margin: 1rem;

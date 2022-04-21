@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?&family=Source+Code+Pro&family=Ubuntu:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -44,6 +44,7 @@
       src="https://kit.fontawesome.com/3dc74c1607.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -234,6 +235,16 @@
           >
         </div>
       </section>
+
+      <div
+        class="d-flex justify-content-center align-items-center flex-column my-5 text-center"
+      >
+        <div>
+          <button id="new-joke-btn" class="my-2 px-2">Random Joke Genie</button>
+        </div>
+        <div id="jokes"></div>
+      </div>
+      <!-- </div> -->
     </main>
 
     <section id="contact-me">
@@ -279,6 +290,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./app.js"></script>
     <script src="typed.js"></script>
+    <script src="jokes.js"></script>
     <script>
       AOS.init({
         duration: 1000,
