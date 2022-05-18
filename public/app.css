@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9f5;
+}
+
 .navbar {
   font-family: "Ubuntu", sans-serif;
 }
@@ -69,11 +73,18 @@ a {
   justify-content: space-between;
   /* grid-template-columns: 1fr 1fr; */
   /* grid-gap: 2rem; */
-  background-color: #f1f1f1;
+  background-color: #f6f6f1;
   margin-bottom: 2rem;
+  border-radius: 30px;
+  border-color: #333;
+  border-width: 0.1em;
+}
+.card:hover {
+  background-color: #e3e3da;
 }
 
 .card img {
+  border-radius: 25px;
   height: 320px;
   width: 320px;
 }
